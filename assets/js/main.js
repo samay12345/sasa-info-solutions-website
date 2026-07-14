@@ -85,7 +85,7 @@
         email: form.email.value.trim(),
         subject: form.subject.value.trim(),
         message: form.message.value.trim(),
-        company: form.company.value.trim() // honeypot
+        sasa_ref_9f3k: form.sasa_ref_9f3k.value.trim() // honeypot
       };
 
       btn.disabled = true;

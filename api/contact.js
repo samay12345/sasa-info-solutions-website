@@ -25,7 +25,7 @@ module.exports = async (req, res) => {
   const email = String(body.email || '').trim();
   const subject = String(body.subject || '').trim();
   const message = String(body.message || '').trim();
-  const honeypot = String(body.company || '').trim();
+  const honeypot = String(body.sasa_ref_9f3k || '').trim();
 
   // Bots fill hidden fields — silently pretend success without sending anything.
   if (honeypot) {
