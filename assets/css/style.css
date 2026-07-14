@@ -139,7 +139,7 @@ p { color: var(--ink-soft); margin: 0 0 16px; }
   padding-top: 8px;
   padding-bottom: 8px;
 }
-.topbar span { display: inline-flex; align-items: center; gap: 7px; }
+.topbar span { display: inline-flex; align-items: center; gap: 7px; white-space: nowrap; }
 .topbar svg { width: 13px; height: 13px; opacity: 0.85; }
 
 header#header {
@@ -749,4 +749,8 @@ footer#footer {
 
 @media (max-width: 560px) {
   .marquee-item { width: 170px; height: 110px; }
+  .topbar { font-size: 10px; }
+  .topbar .container { gap: 10px; padding-left: 14px; padding-right: 14px; }
+  .topbar span { gap: 3px; }
+  .topbar svg { display: none; }
 }
